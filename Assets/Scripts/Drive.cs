@@ -14,7 +14,7 @@ public class Drive : MonoBehaviour
     {
         xValue = Input.GetAxis("Horizontal");
         zValue = Input.GetAxis("Vertical");
-        print("xValue: " + xValue + " zValue: " + zValue);
         transform.Translate(xValue * Time.deltaTime *10, 0f, zValue * Time.deltaTime *10);
+        print(Time.time);
     }
 }
